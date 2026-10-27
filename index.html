@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Практична №4</title>
+</head>
+<body>
+    <!-- Форма для реєстрації -->
+    <div class="container">
+        <img src="images/team.jpg" alt="team image">
+        <!-- wrapper is another conteiner that has all using content. wrapper is just a name of container. You can change this.-->
+        <div class="wrapper">
+            <form>
+                <div class="inner">
+                    <h1 class="logo">TeamTech</h1>
+                    <h2 class="registration">реєстрація</h2>
+                </div>
+                <!-- personal -->
+                <fieldset class="personal">
+                    <input type="text" id="name" name="personal" placeholder="Прізвище та імʼя">
+                    <input type="text" id="email" name="personal" placeholder="Електрона пошта">
+                    <input type="text" id="date" name="personal" placeholder="Дата народження">
+                    <input type="text" id="site" name="personal" placeholder="Профіль у In або url на особистий сайт">
+                    <input type="password" id="password" name="personal" placeholder="пароль">
+                </fieldset>
+                <!-- Напрям діяльності / Area of activity -->
+                <fieldset class="area">
+                    <legend>Напрям діяльності</legend>
+                    <div class="area_first">
+                        <div>
+                            <input type="radio" id="since" name="activity">
+                            <label for="since">Science & DeepTech</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="it" name="activity">
+                            <label for="it">IT & Startups</label>
+                        </div>
+                    </div>
+
+                    <div class="area_second">
+                        <div>
+                            <input type="radio" id="investment" name="activity">
+                            <label for="investment">Venture & Investments</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="crypto" name="activity">
+                            <label for="crypto">Crypto & Web3</label>
+                        </div>
+                    </div>
+                </fieldset> 
+                <!-- Поточна роль / Current position -->
+                <fieldset class="position">
+                    <legend>Поточна роль</legend>
+                    <input type="radio" id="founder" name="position">
+                    <label for="founder">Засновник</label>
+
+                    <input type="radio" id="investor" name="position">
+                    <label for="investor">Інвестор</label>
+
+                    <input type="radio" id="researcher" name="position">
+                    <label for="researcher">Дослідник</label>
+
+                    <input type="radio" id="specialist" name="position">
+                    <label for="specialist">Фахівець</label>
+                </fieldset>
+                <!-- Інтереси та залученість / Interests and engagement -->
+                <fieldset class="interests">
+                    <legend>Інтереси та залученість</legend>
+                    <div>
+                        <input type="checkbox" id="find" name="interests">
+                        <label for="find">Пошук співзасновників / партнерів</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="fundraising" name="interests">
+                        <label for="fundraising">Залучення інвестицій (Fundraising)</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="investment" name="interests">
+                        <label for="investment">Пошук проектів для інвестування</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="mentoring" name="interests">
+                        <label for="mentoring">Менторство та обмін досвідом</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="events" name="interests">
+                        <label for="events">Участь у закритих offline-подіях</label>
+                    </div>
+                </fieldset>
+                <div class="rules-container">
+                    <input type="checkbox" id="rules">
+                    <label for="rules" class="rules_text">Я ознайомлений(а) з правилами безпеки на трасі та Політикою конфіденційності.</label>
+                </div>
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </div>
+    </div>
+    <!-- форма для входу в обліковий запис -->
+    <div class="account">
+        <h1 class="acc-logo">TeamTech</h1>
+        <h3 class="log_in">Вхід до облікового запису</h3>
+        <fieldset class="log_in-cont">
+            <input type="text"  placeholder="Електрона пошта або номер телефону" class="item">
+            <input type="password"  placeholder="пароль" class="item">
+        </fieldset>
+        <p class="text">або</p>
+        <fieldset>
+            <div class="soc_cont">
+                <img src="images/google.svg" alt="Google" class="soc_logo">
+                <p class="soc_text">Увійти за допомогою Google</p>
+            </div>
+            <div class="soc_cont">
+                <img src="images/git.svg" alt="GitHub" class="soc_logo">
+                <p class="soc_text">Увійти за допомогою GstHub</p>
+            </div>
+        </fieldset>
+        <div class="rules_container">
+            <input type="checkbox" id="rules_radio">
+            <label for="rules_radio" class="rule_disc">Я ознайомлений(а) з правилами безпеки на трасі та Політикою конфіденційності.</label>
+        </div>
+        <button type="submit">Увійти</button>
+    </div>
+</body>
+
+</html>
