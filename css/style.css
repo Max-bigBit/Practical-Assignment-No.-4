@@ -107,7 +107,7 @@ input[type=radio]:hover {
     border-color: black;
 }
 input[type=radio]:checked{
-    background-image: url("/images/tick.svg");
+    background-image: url("images/tick.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 9px 9px;
